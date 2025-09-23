@@ -1,4 +1,7 @@
 'use client';
+
+export const dynamic = "force-dynamic";
+
 import Button from "@/components/Button";
 import Modal from "@/components/Modal";
 import UpdateUserPassword from "@/components/Modals/UpdateUserPassword";

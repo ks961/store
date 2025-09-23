@@ -31,12 +31,12 @@ export default function StoresAdminView() {
     const stores = data?.data.data || [];
 
     const filteredUsers = stores.filter((store: any) => {
-        const keyword = search.toLowerCase();
+        const keyword = search?.toLowerCase();
         return (
-            store.name.toLowerCase().includes(keyword) ||
-            store.email.toLowerCase().includes(keyword) ||
-            store.roleName.toLowerCase().includes(keyword) ||
-            store.address.toLowerCase().includes(keyword)
+            store.name?.toLowerCase().includes(keyword) ||
+            store.email?.toLowerCase().includes(keyword) ||
+            store.roleName?.toLowerCase().includes(keyword) ||
+            store.address?.toLowerCase().includes(keyword)
         );
     });
 

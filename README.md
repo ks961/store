@@ -5,6 +5,16 @@
 
 ## Store Frontend
 
+
+### Environment Variables (`.env`)
+
+```env
+NEXT_PUBLIC_PROTOCOL=http
+NEXT_PUBLIC_DOMAIN=localhost:3000
+ACCESS_TOKEN_COOKIE_TAG=your_cookie_tag
+JWT_SECRET=your_secret
+```
+
 ---
 
 ## Public Routes
@@ -63,6 +73,22 @@ They are grouped under `app/(protected)/`.
 
 ## Store Backend
 
+### Environment Variables (`.env`)
+
+```env
+PORT=3001
+APP_NAME=store-backend
+FRONTEND_PROTOCOL=http
+FRONTEND_DOMAIN=localhost:3000
+BACKEND_PROTOCOL=http
+BACKEND_DOMAIN=localhost:3001
+BUN_ENV=development
+ACCESS_TOKEN_EXP=3600
+REDIS_URI=redis://localhost:6379
+ACCESS_TOKEN_COOKIE_TAG=your_cookie_tag # should same as frontend.
+DATABASE_URL=postgres://user:password@localhost:5432/storedb
+JWT_SECRET=your_secret
+```
 
 ## Scripts
 

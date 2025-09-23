@@ -1,3 +1,4 @@
+'use client';
 import { ModalContext } from "./index";
 import { ReactNode, useCallback, useEffect, useState } from "react";
 import CloseIcon from "../Icons/CloseIcon";
@@ -23,7 +24,7 @@ export function ModalView({ children }: ModalViewProps) {
     const handleKeyPress = useCallback((event: KeyboardEvent) => {
         const { key } = event;
 
-        if(key.toLowerCase() === "escape") {
+        if(key?.toLowerCase() === "escape") {
             closeModal();
         }
     }, [closeModal]);
