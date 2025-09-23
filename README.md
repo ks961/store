@@ -1,7 +1,56 @@
 # Store
 
+[Database Setup](#setting-up-and-seeding-the-database)
 [Store Frontend](#store-frontend)  
 [Store Backend](#store-backend)
+
+---
+
+## Setting Up and Seeding the Database
+
+Follow these steps to create the `db_store` database and import the `seed.sql` file.
+
+### 1. Create the database
+
+Make sure you have PostgreSQL installed and running. Then create the database:
+
+```bash
+createdb -U <username> db_store
+```
+
+Replace `<username>` with your PostgreSQL role (for example, `postgres` or `l0c4l`).
+If prompted for a password, enter the password for that role.
+
+---
+
+### 2. Import the seed file
+
+Once the database exists, load the seed data:
+
+```bash
+psql -U <username> -d db_store -W -f seed.sql
+```
+
+* `-U <username>` → connect as this role
+* `-d db_store` → target the `db_store` database
+* `-W` → force password prompt
+* `-f seed.sql` → execute the commands in `seed.sql`
+
+---
+
+### 3. Verify the data
+
+Open a `psql` session to the database:
+
+```bash
+psql -U <username> -d db_store
+```
+
+```bash
+select * from role_permissions
+```
+
+===
 
 ## Store Frontend
 
@@ -454,3 +503,4 @@ Delete a rating by its ID.
 * **Params**: `{ id: string, storeRatingId: string }` (validated with `UpdateStoreRatingParamSchema`)
 * **Middleware**: `requireAccessToken`, `isAuthenticated`, `validateRequest`
 * **Controller**: `StoreRatingController.deleteStoreRating`
+
