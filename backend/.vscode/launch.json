@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "bun",
+      "request": "launch",
+      "name": "Launch Bun with inspect",
+      "program": "src/server.ts",
+      "runtimeArgs": ["--inspect=9229"],
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": false,
+      "watchMode": false
+    },
+    {
+      "type": "bun",
+      "request": "attach",
+      "name": "Attach Bun",
+      "url": "ws://localhost:9229/",
+      "stopOnEntry": true
+    }
+  ]
+}

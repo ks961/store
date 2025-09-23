@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+html, body {
+  height: 100%;
+}
+
+@theme {
+    --color-text: oklch(18.30% 0.027 358.64);
+    --color-background: oklch(95.50% 0.012 350.98);
+    --color-primary: oklch(36.36% 0.077 1.75);
+    --color-secondary: oklch(78.08% 0.103 139.37);
+    --color-accent: oklch(60.27% 0.097 161.94);
+    --color-primary-foreground: oklch(92.92% 0.018 355.13);
+}
+
+:root[data-theme="dark"] {
+  --color-text: oklch(92.92% 0.018 355.13);
+  --color-background: oklch(15.13% 0.020 353.62);
+  --color-primary: oklch(76.10% 0.064 358.11);
+  --color-secondary: oklch(51.68% 0.110 139.90);
+  --color-accent: oklch(73.36% 0.096 163.41);
+  --color-primary-foreground: oklch(18.30% 0.027 358.64);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: oklch(92.92% 0.018 355.13);
+    --color-background: oklch(15.13% 0.020 353.62);
+    --color-primary: oklch(76.10% 0.064 358.11);
+    --color-secondary: oklch(51.68% 0.110 139.90);
+    --color-accent: oklch(73.36% 0.096 163.41);
+    --color-primary-foreground: oklch(18.30% 0.027 358.64);
+  }
+} */
