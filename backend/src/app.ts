@@ -9,7 +9,9 @@ import { FRONTEND } from "@configs/frontend";
 const app = express();
 
 app.use(cors({
-    origin: FRONTEND.base_url,
+    origin: [
+        FRONTEND.base_url,
+    ],
     credentials: true,
     methods: [
         'GET', 'POST', 
