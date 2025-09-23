@@ -504,3 +504,4 @@ Delete a rating by its ID.
 * **Middleware**: `requireAccessToken`, `isAuthenticated`, `validateRequest`
 * **Controller**: `StoreRatingController.deleteStoreRating`
 
+
