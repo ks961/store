@@ -51,7 +51,7 @@ psql -U <username> -d db_store
 select * from role_permissions
 ```
 
-===
+---
 
 ## Store Frontend
 
@@ -504,6 +504,7 @@ Delete a rating by its ID.
 * **Params**: `{ id: string, storeRatingId: string }` (validated with `UpdateStoreRatingParamSchema`)
 * **Middleware**: `requireAccessToken`, `isAuthenticated`, `validateRequest`
 * **Controller**: `StoreRatingController.deleteStoreRating`
+
 
 
 
