@@ -19,7 +19,7 @@ Make sure you have PostgreSQL installed and running. Then create the database:
 createdb -U <username> db_store
 ```
 
-Replace `<username>` with your PostgreSQL role (for example, `postgres` or `l0c4l`).
+Replace `<username>` with your PostgreSQL role (for example, `postgres`).
 If prompted for a password, enter the password for that role.
 
 ---
@@ -504,6 +504,7 @@ Delete a rating by its ID.
 * **Params**: `{ id: string, storeRatingId: string }` (validated with `UpdateStoreRatingParamSchema`)
 * **Middleware**: `requireAccessToken`, `isAuthenticated`, `validateRequest`
 * **Controller**: `StoreRatingController.deleteStoreRating`
+
 
 
 
