@@ -1,6 +1,7 @@
 # Store
 
 [Database Setup](#setting-up-and-seeding-the-database)
+
 [Store Frontend](#store-frontend)  
 [Store Backend](#store-backend)
 
@@ -503,5 +504,6 @@ Delete a rating by its ID.
 * **Params**: `{ id: string, storeRatingId: string }` (validated with `UpdateStoreRatingParamSchema`)
 * **Middleware**: `requireAccessToken`, `isAuthenticated`, `validateRequest`
 * **Controller**: `StoreRatingController.deleteStoreRating`
+
 
 
