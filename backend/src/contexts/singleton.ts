@@ -76,6 +76,10 @@ export function registerSingleton(
         )
     );
 
+    container.singleton(
+        TextEncoder,
+        () => new TextEncoder()
+    );
     
     container.singleton(
         PasswordHasher,
@@ -88,7 +92,7 @@ export function registerSingleton(
         AuthToken,
         () => new AuthToken(
             new Jwt(
-                new TextEncoder().encode(configs.JWT_SECRET)
+                container.resolve(TextEncoder).encode(configs.JWT_SECRET)
             )
         )
     );
