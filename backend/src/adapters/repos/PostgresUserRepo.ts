@@ -7,7 +7,6 @@ import { ClientError } from "@errors/error-classes/client-error";
 import { usersTable, type NewUser, type UserModel } from "src/db/schema";
 import type { IDomainTransformer } from "@ports/domain/IDomainTransformer";
 import { isNonEmpty } from "@libs/utils";
-import type { ISizeProvider } from "@ports/utilities/ISizeProvider";
 import { ServerError } from "@errors/error-classes/server-error";
 
 export class PostgresUserRepo implements 

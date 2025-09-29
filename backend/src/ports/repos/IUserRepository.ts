@@ -1,5 +1,5 @@
 import { User } from "@domains/entities/user";
-import type { ISizeProvider } from "@ports/utilities/ISizeProvider";
+
 import type { NewUser, UserModel } from "src/db/schema";
 
 export type FilterUser = Omit<UserModel, "hashedPassword">;

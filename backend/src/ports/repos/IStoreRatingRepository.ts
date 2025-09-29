@@ -1,6 +1,6 @@
 import type { NewStoreRating, StoreRatingModel } from "@db/schema";
 import type { StoreRating } from "@domains/entities/store-rating";
-import type { ISizeProvider } from "@ports/utilities/ISizeProvider";
+
 
 
 export interface IStoreRatingRepository extends ISizeProvider {

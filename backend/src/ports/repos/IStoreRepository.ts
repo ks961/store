@@ -1,6 +1,6 @@
 import type { NewStore, StoreModel } from "@db/schema";
 import type { Store } from "@domains/entities/store";
-import type { ISizeProvider } from "@ports/utilities/ISizeProvider";
+
 import type { CreateStoreRequestDto } from "@schemas/store";
 
 

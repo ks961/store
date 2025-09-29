@@ -9,7 +9,6 @@ import { and, eq, like, sql } from "drizzle-orm";
 import { ServerError } from "@errors/error-classes/server-error";
 import { isNonEmpty } from "@libs/utils";
 import type { CreateStoreRequestDto } from "@schemas/store";
-import type { ISizeProvider } from "@ports/utilities/ISizeProvider";
 
 
 export class PostgresStoreRepo implements 

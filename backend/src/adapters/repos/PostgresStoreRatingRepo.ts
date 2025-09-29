@@ -6,7 +6,7 @@ import { ServerError } from "@errors/error-classes/server-error";
 import { HttpClientError, HttpServerError } from "@libs/http-response-codes";
 import type { IDomainTransformer } from "@ports/domain/IDomainTransformer";
 import type { IStoreRatingRepository } from "@ports/repos/IStoreRatingRepository";
-import type { ISizeProvider } from "@ports/utilities/ISizeProvider";
+
 import { and, eq, isNull, sql } from "drizzle-orm";
 
 
